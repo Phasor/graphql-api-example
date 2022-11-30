@@ -1,5 +1,6 @@
 import { gql } from "@apollo/client";
 
+// call the addClient function in the back end
 const ADD_CLIENT = gql`
   mutation addClient($name: String!, $email: String!, $phone: String!) {
     addClient(name: $name, email: $email, phone: $phone) {
